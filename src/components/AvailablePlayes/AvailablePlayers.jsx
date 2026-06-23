@@ -1,14 +1,22 @@
 import { use } from "react";
+import AvailablePlayer from "../AvailablePlayer/AvailablePlayer";
 
-const AvailablePlayers = ( { playersPromise } ) => {
+const AvailablePlayers = ({ playersPromise }) => {
+  const players = use(playersPromise);
 
-    const playersData = use(playersPromise);
-    console.log(playersData);
-    return (
-        <div>
-            <h1 className="text-2xl font-bold mb-4">Available Players: {playersData.length}</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1 className="text-2xl font-bold mb-4">
+        Available Players: {players.length}
+      </h1>
+
+      <div className="card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {
+            players.map((player)=> <AvailablePlayer key={player.id} player={player} />)
+        }
+      </div>
+    </div>
+  );
 };
 
 export default AvailablePlayers;

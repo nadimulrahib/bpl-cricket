@@ -3,7 +3,7 @@ import dollar from "../../assets/DoubleDollar.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar container mx-auto py-4 px-6 flex items-center">
+    <div className="navbar">
       <div className="flex-none"></div>
       <div className="flex-1">
         <img src={navLogo} alt="Logo" />
