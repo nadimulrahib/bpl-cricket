@@ -1,0 +1,134 @@
+[
+  {
+    "player_id": 1,
+    "player_name": "Virat Kohli",
+    "player_image": "https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg",
+    "player_country": "India",
+    "playing_role": "Top-order Batter",
+    "rating": 9.6,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Medium",
+    "price": "$1,800,000"
+  },
+  {
+    "player_id": 2,
+    "player_name": "Babar Azam",
+    "player_image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Babar_azam_2023.jpg",
+    "player_country": "Pakistan",
+    "playing_role": "Batter",
+    "rating": 9.2,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Offbreak",
+    "price": "$1,400,000"
+  },
+  {
+    "player_id": 3,
+    "player_name": "Ben Stokes",
+    "player_image": "https://static-files.cricket-australia.pulselive.com/headshots/440/196-camedia.png",
+    "player_country": "England",
+    "playing_role": "Allrounder",
+    "rating": 9.4,
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Right-arm Fast-medium",
+    "price": "$1,650,000"
+  },
+  {
+    "player_id": 4,
+    "player_name": "Pat Cummins",
+    "player_image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pat_Cummins_fielding_Ashes_2021_%28cropped%29.jpg",
+    "player_country": "Australia",
+    "playing_role": "Bowler",
+    "rating": 9.5,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "price": "$1,750,000"
+  },
+  {
+    "player_id": 5,
+    "player_name": "Kane Williamson",
+    "player_image": "https://e0.365dm.com/25/11/2048x1152/skysports-kane-williamson-new-zealand_7069504.jpg?20251102120344",
+    "player_country": "New Zealand",
+    "playing_role": "Top-order Batter",
+    "rating": 9.1,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Offbreak",
+    "price": "$1,200,000"
+  },
+  {
+    "player_id": 6,
+    "player_name": "Rashid Khan",
+    "player_image": "https://www.gujarattitansipl.com/static-assets/images/players/65748.png?v=6.76",
+    "player_country": "Afghanistan",
+    "playing_role": "Bowling Allrounder",
+    "rating": 9.3,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Legbreak",
+    "price": "$1,500,000"
+  },
+  {
+    "player_id": 7,
+    "player_name": "Jasprit Bumrah",
+    "player_image": "https://img.ipl.com/upload/20251104/50db6df08624409d93a30f346bb76523.jpg",
+    "player_country": "India",
+    "playing_role": "Bowler",
+    "rating": 9.7,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "price": "$1,700,000"
+  },
+  {
+    "player_id": 8,
+    "player_name": "Quinton de Kock",
+    "player_image": "https://upload.wikimedia.org/wikipedia/commons/6/67/QUINTON_DE_KOCK_%2815681398316%29.jpg",
+    "player_country": "South Africa",
+    "playing_role": "Wicketkeeper-Batter",
+    "rating": 8.9,
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "None",
+    "price": "$1,100,000"
+  },
+  {
+    "player_id": 9,
+    "player_name": "Glenn Maxwell",
+    "player_image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Glen_Maxwell_2026_%28cropped%29.jpg",
+    "player_country": "Australia",
+    "playing_role": "Batting Allrounder",
+    "rating": 9.0,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Offbreak",
+    "price": "$1,350,000"
+  },
+  {
+    "player_id": 10,
+    "player_name": "Shakib Al Hasan",
+    "player_image": "https://nclcricket.com/wp-content/uploads/2024/09/11.png",
+    "player_country": "Bangladesh",
+    "playing_role": "Allrounder",
+    "rating": 9.1,
+    "batting_style": "Left-hand Bat",
+    "bowling_style": "Slow Left-arm Orthodox",
+    "price": "$1,250,000"
+  },
+  {
+    "player_id": 11,
+    "player_name": "Wanindu Hasaranga",
+    "player_image": "https://resources.ecb.co.uk/photo-resources/2022/05/20/4df048fe-3a27-408f-b167-e9361a7a9e5d/MO-Wanindu-Hasaranga-copy.png?width=460&height=690",
+    "player_country": "Sri Lanka",
+    "playing_role": "Bowling Allrounder",
+    "rating": 8.8,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "Right-arm Legbreak",
+    "price": "$950,000"
+  },
+  {
+    "player_id": 12,
+    "player_name": "Jos Buttler",
+    "player_image": "https://www.gujarattitansipl.com/static-assets/images/players/9782.png?v=6.76",
+    "player_country": "England",
+    "playing_role": "Wicketkeeper-Batter",
+    "rating": 9.3,
+    "batting_style": "Right-hand Bat",
+    "bowling_style": "None",
+    "price": "$1,450,000"
+  }
+]
