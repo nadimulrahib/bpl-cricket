@@ -11,9 +11,11 @@ const players = async () => {
 
 function App() {
   const playersPromise = players();
-  console.log(playersPromise);
   return (
     <>
+    <div className="App container mx-auto px-4">
+
+
       <Navbar></Navbar>
 
       <Suspense
@@ -24,6 +26,7 @@ function App() {
           playersPromise={playersPromise}
         ></AvailablePlayers>
       </Suspense>
+    </div>
     </>
   );
 }
