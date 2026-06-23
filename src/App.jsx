@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import AvailablePlayers from "./components/AvailablePlayes/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const players = async () => {
   const playersData = await fetch("/player.json");
@@ -26,6 +27,7 @@ function App() {
           playersPromise={playersPromise}
         ></AvailablePlayers>
       </Suspense>
+      <Footer></Footer>
     </div>
     </>
   );
