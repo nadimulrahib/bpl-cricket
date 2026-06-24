@@ -15,6 +15,7 @@ function App() {
   const playersPromise = players();
   const [toggle, setToggle] = useState(true);
   const [availableBalance, setAvailableBalance] =useState(600000000000)
+  const [buyPlayers, setBuyPlayers] =useState([])
   return (
     <>
       <div className="App container mx-auto px-4">
@@ -58,10 +59,12 @@ function App() {
               playersPromise={playersPromise}
               setAvailableBalance={setAvailableBalance}
               availableBalance={availableBalance}
+              setBuyPlayers={setBuyPlayers}
+              buyPlayers={buyPlayers}
             ></AvailablePlayers>
           </Suspense>
         ) : (
-          <SelectedPlayer></SelectedPlayer>
+          <SelectedPlayer buyPlayers={buyPlayers}></SelectedPlayer>
         )}
 
         <Footer></Footer>

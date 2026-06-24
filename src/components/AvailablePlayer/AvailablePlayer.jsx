@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AvailablePlayer = ({ player, availableBalance, setAvailableBalance }) => {
+const AvailablePlayer = ({ player, availableBalance, setAvailableBalance , setBuyPlayers, }) => {
   const [selected, setSelected] = useState(false);
 
   const {
@@ -13,19 +13,20 @@ const AvailablePlayer = ({ player, availableBalance, setAvailableBalance }) => {
     price,
   } = player;
 
-const handleSelectPlayer = () => {
-  const playerPrice = Number(price.replace(/[$,]/g, ""));
+  const handleSelectPlayer = ({ player }) => {
+    const playerPrice = Number(price.replace(/[$,]/g, ""));
 
-  if (selected) return;
+    if (selected) return;
 
-  if (availableBalance < playerPrice) {
-    alert("Not enough balance!");
-    return;
-  }
+    if (availableBalance < playerPrice) {
+      alert("Not enough balance!");
+      return;
+    }
 
-  setSelected(true);
-  setAvailableBalance(prev => prev - playerPrice);
-};
+    setSelected(true);
+    setAvailableBalance((prev) => prev - playerPrice);
+    setBuyPlayers((buyPlayers) => [...buyPlayers, player]);
+  };
 
   return (
     <div>
@@ -89,7 +90,7 @@ const handleSelectPlayer = () => {
             </p>
 
             <button
-              onClick={handleSelectPlayer}
+              onClick={() => handleSelectPlayer({ player })}
               className={`btn rounded-2xl font-semibold text-white ${
                 selected ? "bg-gray-500" : "bg-green-600"
               }`}
