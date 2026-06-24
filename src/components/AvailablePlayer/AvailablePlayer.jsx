@@ -1,5 +1,9 @@
+import { useState } from "react";
 
 const AvailablePlayer = ({ player }) => {
+
+  const [selected, setSelected]=useState(false)
+
     const {player_name,player_image,player_country,rating,batting_style,bowling_style,price}=player;
     return (
         <div>
@@ -76,6 +80,10 @@ const AvailablePlayer = ({ player }) => {
               Price:{" "}
               <span className="text-primary">{price}</span>
             </p>
+
+            <button onClick={()=>setSelected(!selected)} className="btn bg-green-600 rounded-2xl font-semibold text-white">{selected?"selected":"choose player"}</button>
+
+
             {/* <button
               className={`btn btn-sm ${
                 selected ? "btn-success" : "btn-primary"
