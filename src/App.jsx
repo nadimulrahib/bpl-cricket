@@ -14,16 +14,28 @@ const players = async () => {
 function App() {
   const playersPromise = players();
   const [toggle, setToggle] = useState(true);
-  const [availableBalance, setAvailableBalance] =useState(600000000000)
-  const [buyPlayers, setBuyPlayers] =useState([])
+  const [availableBalance, setAvailableBalance] = useState(600000000000);
+  const [buyPlayers, setBuyPlayers] = useState([]);
+
+  const handleRemovePlayer = (player) => {
+    const playerPrice = Number(player.price.replace(/[$,]/g, ""));
+    setAvailableBalance((prev) => prev + playerPrice);
+    const filteredPlayers = buyPlayers.filter((p) => p.player_id !== player.player_id);
+    setBuyPlayers(filteredPlayers);
+    
+  }
   return (
     <>
       <div className="App container mx-auto px-4">
-        <Navbar availableBalance = {availableBalance}></Navbar>
+        <Navbar availableBalance={availableBalance}></Navbar>
 
         <div className="flex justify-between items-center my-4">
           {" "}
-          <h1 className="text-2xl font-bold mb-4">Available Players:</h1>
+          <h1 className="text-2xl font-bold mb-4">
+            {!toggle
+              ? `Selected Players (${buyPlayers.length}/6)`
+              : "Available Players"}
+          </h1>
           <div>
             <button
               className={
@@ -43,7 +55,7 @@ function App() {
               }
               onClick={() => setToggle(false)}
             >
-              Selected Players
+              Selected Players ({buyPlayers.length})
             </button>
           </div>
         </div>
@@ -64,7 +76,7 @@ function App() {
             ></AvailablePlayers>
           </Suspense>
         ) : (
-          <SelectedPlayer buyPlayers={buyPlayers}></SelectedPlayer>
+          <SelectedPlayer buyPlayers={buyPlayers} handleRemovePlayer={handleRemovePlayer}></SelectedPlayer>
         )}
 
         <Footer></Footer>
