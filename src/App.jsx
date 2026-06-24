@@ -14,10 +14,11 @@ const players = async () => {
 function App() {
   const playersPromise = players();
   const [toggle, setToggle] = useState(true);
+  const [availableBalance, setAvailableBalance] =useState(600000000000)
   return (
     <>
       <div className="App container mx-auto px-4">
-        <Navbar></Navbar>
+        <Navbar availableBalance = {availableBalance}></Navbar>
 
         <div className="flex justify-between items-center my-4">
           {" "}
@@ -55,6 +56,8 @@ function App() {
             <AvailablePlayers
               id={playersPromise.id}
               playersPromise={playersPromise}
+              setAvailableBalance={setAvailableBalance}
+              availableBalance={availableBalance}
             ></AvailablePlayers>
           </Suspense>
         ) : (
